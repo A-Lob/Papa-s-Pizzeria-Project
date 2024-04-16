@@ -8,8 +8,8 @@ from classes import *
 
 
 def main():
-    for i in range(0, 35):
-        print(str(35 - i))
+    for i in range(0, 5):
+        print(str(5 - i))
         time.sleep(1)
     numOrd = 1
     orders_in_furnace = [0, 0, 0, 0]
@@ -20,7 +20,8 @@ def main():
     thread = ()
     thread_points = []
 
-
+    if not os.path.exists("data"):
+        os.mkdir("data")
 
     while not kb.is_pressed("q"):
         numreq = 1
